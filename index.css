@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
 
 :root{
-    --yellow:#f9ca24;
+    --grey:rgb(249, 202, 36);
+    
 }
 
 *{
@@ -11,11 +12,11 @@
     text-decoration: none;
     outline: none; border:none;
     text-transform: capitalize;
-    transition: all .2s linear;
+    transition: all .3s linear;
 }
 
 *::selection{
-    background:var(--yellow);
+    background-color:  hsl(197, 87%, 52%);
     color:#333;
 }
 
@@ -33,7 +34,7 @@ html::-webkit-scrollbar-track{
 }
 
 html::-webkit-scrollbar-thumb{
-    background:var(--yellow);
+    background: white;
 }
 
 body{
@@ -66,7 +67,7 @@ section{
 }
 
 .btn:hover{
-    background:var(--yellow);
+    background:hsl(197, 87%, 52%);
 }
 
 .heading{
@@ -79,7 +80,7 @@ section{
 }
 
 .heading span{
-    color:var(--yellow);
+    color:var(--grey);
 }
 
 header{
@@ -95,6 +96,23 @@ header{
     flex-flow: column;
     text-align: center;
 }
+.social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 10px;
+    border-radius: 50px;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    margin-top: 20px;
+}
+.social-links  :hover{
+    background-color: hsl(197, 87%, 52%);
+}
 
 header .user img{
     height:17rem;
@@ -102,7 +120,7 @@ header .user img{
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1rem;
-    border:.7rem solid var(--yellow);
+    border:.7rem solid #333;
 }
 
 header .user .name{
@@ -117,6 +135,7 @@ header .user .post{
 
 header .navbar{
     width:100%;
+
 }
 
 header .navbar ul{
@@ -126,19 +145,28 @@ header .navbar ul{
 
 
 header .navbar ul li a{
-    display: block;
-    padding:1rem;
-    margin:1.5rem 0;
-    background:#333;
-    color:#fff;
+    display: flex;
+    align-items: center;
+    color: #a8a9b4;
+    padding: 10px 23px;
     font-size: 2rem;
-    border-radius: 5rem;
+    margin-top: 13px;
+    background-color: #333;
+    border-radius: 25px;
+    
+    justify-content: center;
+
+    
     
 }
-
-header .navbar ul li a:hover{
-    background:var(--yellow);
+header .navbar li a:hover{
+    background-color: hsl(197, 87%, 52%);
+    color: #fff;
 }
+.navbar span{
+    width: 100%;
+}
+
 
 #menu{
     position: fixed;
@@ -170,7 +198,7 @@ header .navbar ul li a:hover{
 }
 
 .home h1 span{
-    color:var(--yellow);
+    color:var(--grey);
 }
 
 .home p{
@@ -196,7 +224,7 @@ header .navbar ul li a:hover{
 .about .row .info h3{
     display: flex;
     font-size: 2rem;
-    color:var(--yellow);
+    color:var(--grey);
     padding:1rem 0;
     
     font-weight: normal;
@@ -227,7 +255,7 @@ header .navbar ul li a:hover{
 
 .about .row .counter .box span{
     font-size: 4rem;
-    color:var(--yellow);
+    color:var(--grey);
 }
 
 .about .row .counter .box h3{
@@ -291,7 +319,7 @@ header .navbar ul li a:hover{
     text-align: center;
     font-size: 2rem;
     color:#fff;
-    background:var(--yellow);
+    background:var(--grey);
 }
 
 .portfolio .box-container{
@@ -401,7 +429,7 @@ header .navbar ul li a:hover{
 
 .contact .row .content .info h3 i{
     padding-right: 1rem;
-    color:var(--yellow);
+    color:var(--grey);
 }
 
 .top{
@@ -498,5 +526,17 @@ header .navbar ul li a:hover{
     .contact .row form{
         margin:3rem 0;
     }
+    .portfolio .box-container .box li{
+        font-size: 15px;
+    }
 
+    .portfolio .box-container .box h3{
+        font-size:  25px ;
+    }
+    .portfolio .box-container .box h4{
+        font-size: 20px;
+    }
+    .portfolio .box-container .box span{
+        font-size: 15px;
+    }
  }
